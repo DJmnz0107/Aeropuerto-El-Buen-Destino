@@ -90,3 +90,43 @@ header{
         display: block;
     }
 }
+
+.flight-container {
+    max-width: 800px;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.flight {
+    border-bottom: 1px solid #ccc;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.flight:last-child {
+    border-bottom: none;
+}
+
+.flight-details {
+    flex: 1;
+}
+
+.flight-details h3 {
+    margin: 0;
+}
+
+.flight-details p {
+    margin: 5px 0;
+    color: #555;
+}
+
+.flight-price {
+    font-size: 20px;
+    font-weight: bold;
+    color: #007BFF;
+}
