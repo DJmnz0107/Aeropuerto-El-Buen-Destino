@@ -1,0 +1,92 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+body{
+    height: 100vh;
+    background-color: black;
+    background-image: url('https://wallpaperset.com/w/full/f/3/2/217577.jpg');
+    background-size: cover;
+    background-position: center;
+}
+li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 1rem;
+}
+
+a:hover{
+    color: orange;
+}
+
+header{
+    position: relative;
+    padding: 0 2rem;
+}
+
+.menu{
+    width: 100%;
+    height: 60px;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.menu .logo a{
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.menu .apartados{
+    display: flex;
+    gap: 2rem;
+}
+
+.menu .toggle_btn{
+    color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
+    display: none;
+}
+.action-btn{
+    background-color: rgb(99, 255, 51);
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: scale .2 ease;
+}
+
+.action-btn:hover {
+    scale: 1.05;
+    color: #fff;
+}
+
+.action-btn:active {
+    scale: 0.95;
+    
+}
+
+@media (max-width: 992px){
+    .menu .apartados,
+    .menu .action-btn{
+        display: none;
+    }
+
+    .menu .toggle_btn{
+        display: block;
+    }
+}
