@@ -7,8 +7,7 @@
 
 body{
     height: 100vh;
-    background-color: black;
-    background-image: url('https://wallpaperset.com/w/full/f/3/2/217577.jpg');
+    background-color: #fff;
     background-size: cover;
     background-position: center;
 }
@@ -51,13 +50,13 @@ header{
     gap: 2rem;
 }
 
-.menu .toggle_btn{
+.menu .barra{
     color: white;
     font-size: 1.5rem;
     cursor: pointer;
     display: none;
 }
-.action-btn{
+.action_btn{
     background-color: rgb(99, 255, 51);
     color: #fff;
     padding: 0.5rem 1rem;
@@ -70,23 +69,201 @@ header{
     transition: scale .2 ease;
 }
 
-.action-btn:hover {
+.action_btn:hover {
     scale: 1.05;
     color: #fff;
 }
 
-.action-btn:active {
+.action_btn:active {
     scale: 0.95;
     
 }
 
+
+
+.menudeslizable{
+    position: absolute;
+    right: 2rem;
+    top: 60px;
+    width: 300px;
+    height: 0;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur (15px);
+    border-radius: 10px;
+    overflow: hidden;
+    transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.menudeslizable.open{
+    height: 240px;
+}
+
+
+.menudeslizable li{
+    padding: 0.7rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.menudeslizable .action_btn{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+header{
+    width: 100%;
+    height: 800px;
+    background: #a8ff78;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, hsla(162, 100%, 74%, 0.363), hsla(99, 100%, 74%, 0.678)), url('https://wallpaperset.com/w/full/f/3/2/217577.jpg');  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, hsla(162, 100%, 74%, 0.363), hsla(99, 100%, 74%, 0.678)), url('https://wallpaperset.com/w/full/f/3/2/217577.jpg'); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+}
+.wave{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+header h1{
+    display: flex;
+    height: 430px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    text-align: center;
+    font-size: 50px;
+}
+
+.card{
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+
+.wave {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    z-index: 1; 
+}
+
+main {
+    position: relative;
+    z-index: 2; 
+    padding: 4rem;
+}
+
+.card {
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 60px;
+    border-style: solid;
+    border-radius: 10px;
+    width: 600px;
+    height: 200px;
+    margin: 0 auto;
+}
+
+
+
+.sobre-nosotros {
+    background-color: #fff; 
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+    overflow: hidden;
+    font-size: 20px;
+    margin-top: 100px;
+    padding: 10px;
+}
+
+.contenido {
+    padding: 2rem;
+}
+
+h2 {
+    color: #2ecc71; 
+}
+
+p {
+    color: #333; 
+}
+
+footer {
+    background-color: #333; 
+    padding: 2rem 0;
+    color: white;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer-info,
+.footer-redes {
+    flex: 1;
+    text-align: center;
+}
+
+.footer-info h3,
+.footer-redes h3 {
+    color: #2ecc71; 
+}
+
+.footer-info p {
+    margin: 0.5rem 0;
+    color: white;
+}
+
+.footer-redes img {
+    width: 30px;
+    margin: 0 0.5rem;
+}
+
+.creditos {
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.creditos p {
+    margin: 0;
+}
+
+
 @media (max-width: 992px){
     .menu .apartados,
-    .menu .action-btn{
+    .menu .action_btn{
         display: none;
     }
 
-    .menu .toggle_btn{
+    .menu .barra{
         display: block;
     }
 }
+
+@media (max-width: 576px){
+    .menudeslizable{
+    left: 2rem;
+    width: unset;
+    }
+ }
+
+ @media (max-width: 992px) {
+    .wave {
+        height: 80px; 
+    }
+}
+
+@media (max-width: 576px) {
+    .wave {
+        height: 60px; 
+    }
+}
+
+ 
