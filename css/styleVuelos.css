@@ -199,7 +199,6 @@ header{
     width: 600px; 
     padding: 20px; 
     border-radius: 10px;
-    box-shadow: 0 4px 20px #2ecc71; 
     background-color: white; 
     text-align: center; 
     color: #000000;
@@ -216,4 +215,19 @@ margin-right: 15%;
 .colordelh1deldestino{
     color: #000000;
     margin-left: 8%;
+}
+
+#escala:hover{
+    scale: 1.15;
+    transition: 2s;
+    z-index: 2;
+}
+#escala2:hover{
+    scale: 1.15;
+    transition: 2s;
+    z-index: 2;
+}
+#escala3:hover{
+    scale: 1.15;
+    transition: 2s;
 }
