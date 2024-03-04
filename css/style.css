@@ -2,8 +2,9 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
+
 
 body{
     height: 100vh;
@@ -19,10 +20,12 @@ a{
     text-decoration: none;
     color: #fff;
     font-size: 1rem;
+    transition: color 0.3s ease; 
+    display: inline-block; 
 }
 
 a:hover{
-    color: orange;
+    color: #8fbc8f;
 }
 
 header{
@@ -55,6 +58,7 @@ header{
     font-size: 1.5rem;
     cursor: pointer;
     display: none;
+    
 }
 .action_btn{
     background-color: rgb(99, 255, 51);
@@ -264,75 +268,4 @@ footer {
     .wave {
         height: 60px; 
     }
-}
-
- 
-
-.flight-container {
-    max-width: 800px;
-    margin: 20px auto;
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-.flight {
-    border-bottom: 1px solid #ccc;
-    padding: 10px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.flight:last-child {
-    border-bottom: none;
-}
-
-.flight-details {
-    flex: 1;
-}
-
-.flight-details h3 {
-    margin: 0;
-}
-
-.flight-details p {
-    margin: 5px 0;
-    color: #555;
-}
-
-.flight-price {
-    font-size: 20px;
-    font-weight: bold;
-    color: #007BFF;
-}
-
-.flight-container{
-
-    margin-left: 5%;
-}
-
-.colordelh1delvuelo{
-    color: rgb(0, 0, 0);
-    margin-left: 5%;
-}
-
-.textodegooglemaps
-{
-  color: rgb(0, 0, 0);
-  margin-top: 5%;
-}
-.mapa{
-   margin-top: 3%;
-}
-.vuelo-principales
-{
-margin-left: 15%;
-margin-right: 15%;
-}
-
-.colordelh1deldestino{
-    color: black;
-    margin-left: 8%;
 }

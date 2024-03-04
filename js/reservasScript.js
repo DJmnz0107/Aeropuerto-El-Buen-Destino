@@ -2,24 +2,29 @@ document.addEventListener('DOMContentLoaded', function () {
     const btnConfirmar = document.querySelector('.btn-confirmar');
 
     btnConfirmar.addEventListener('click', function () {
-        // Simulación de la obtención del estado del vuelo (puedes ajustar esto según tu lógica real)
-        const estadoVuelo = obtenerEstadoVuelo();
+        var nombrePasajero = document.getElementById('nombrePasajero').value;
 
-        // Mostrar la alerta SweetAlert2 con el resultado
-        mostrarAlerta(estadoVuelo);
+        const estadoVuelo = obtenerEstadoVueloAleatorio();
+
+        mostrarAlerta(estadoVuelo, nombrePasajero);
     });
 
-    function obtenerEstadoVuelo() {
-        // Aquí puedes implementar la lógica real para obtener el estado del vuelo
-        // Por ahora, simplemente devuelve un estado ficticio
-        return 'Activo'; // Cambia esto según tus necesidades
+    function obtenerEstadoVueloAleatorio() {
+        const random = Math.random();
+        return random >= 0.5 ? 'activo' : 'cancelado';
     }
 
-    function mostrarAlerta(estadoVuelo) {
+    function mostrarAlerta(estadoVuelo, nombrePasajero) {
+        let icono = 'success'; 
+
+        if (estadoVuelo === 'cancelado') {
+            icono = 'error'; 
+        }
+
         Swal.fire({
-            icon: 'success',
+            icon: icono,
             title: 'Estado del vuelo',
-            text: `Su estado de vuelo está ${estadoVuelo}.`,
+            text: `¡Hola! ${nombrePasajero}, su vuelo está en estado ${estadoVuelo}.`,
         });
     }
 });

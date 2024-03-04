@@ -1,0 +1,219 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+.no-link {
+    color: inherit;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+    transition: color 0.3s ease; 
+    display: inline-block; 
+}
+
+.card-with-shadow {
+    box-shadow: 0 4px 20px #2ecc71;
+}
+
+a:hover{
+    color: #8fbc8f;
+}
+
+
+body{
+    margin: 0;
+    padding: 0;
+    background-image: url('https://media.cntraveller.com/photos/611bee50db797d0116fd4c08/1:1/w_2000,h_2000,c_limit/gettyimages-606758063.jpg'); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+li{
+    list-style: none;
+}
+
+
+.no-link {
+    color: inherit;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#recapitular {
+    text-decoration: none;
+}
+
+
+a:hover{
+    color: #8fbc8f;
+}
+
+header{
+    position: relative;
+    padding: 0 2rem;
+}
+
+.menu{
+    width: 100%;
+    height: 60px;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.menu .logo a{
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.menu .apartados{
+    display: flex;
+    gap: 2rem;
+}
+
+.menu .barra{
+    color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
+    display: none;
+}
+.action_btn{
+    background-color: rgb(99, 255, 51);
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: scale .2 ease;
+}
+
+.action_btn:hover {
+    scale: 1.05;
+    color: #fff;
+}
+
+.action_btn:active {
+    scale: 0.95;
+    
+}
+
+
+
+.menudeslizable{
+    position: absolute;
+    right: 2rem;
+    top: 60px;
+    width: 300px;
+    height: 0;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur (15px);
+    border-radius: 10px;
+    overflow: hidden;
+    transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.menudeslizable.open{
+    height: 240px;
+}
+
+
+.menudeslizable li{
+    padding: 0.7rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.menudeslizable .action_btn{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.flight-container {
+    max-width: 800px;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px #2ecc71;
+}
+
+.flight {
+    border-bottom: 1px solid #ccc;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.flight:last-child {
+    border-bottom: none;
+}
+
+.flight-details {
+    flex: 1;
+}
+
+.flight-details h3 {
+    margin: 0;
+}
+
+.flight-details p {
+    margin: 5px 0;
+    color: #555;
+}
+
+.flight-price {
+    font-size: 20px;
+    font-weight: bold;
+    color: #62c162;
+}
+
+.flight-container{
+
+    margin-left: 5%;
+}
+
+.colordelh1delvuelo{
+    color: #000000;
+    margin-left: 5%;
+}
+
+.tarjeta {
+    width: 600px; 
+    padding: 20px; 
+    border-radius: 10px;
+    box-shadow: 0 4px 20px #2ecc71; 
+    background-color: white; 
+    text-align: center; 
+    color: #000000;
+}
+.mapa{
+   margin-top: 3%;
+}
+.vuelo-principales
+{
+margin-left: 15%;
+margin-right: 15%;
+}
+
+.colordelh1deldestino{
+    color: #000000;
+    margin-left: 8%;
+}
