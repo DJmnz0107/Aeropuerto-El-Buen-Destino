@@ -7,8 +7,8 @@
 
 body{
     height: 100vh;
-    background-color: black;
-    background-image: url('https://wallpaperset.com/w/full/f/3/2/217577.jpg');
+    background-color: #ffffff;
+
     background-size: cover;
     background-position: center;
 }
@@ -132,10 +132,30 @@ header{
 }
 
 .flight-container{
-    float: left;
+
     margin-left: 5%;
 }
 
 .colordelh1delvuelo{
-    color: white;
+    color: rgb(0, 0, 0);
+    margin-left: 5%;
+}
+
+.textodegooglemaps
+{
+  color: rgb(0, 0, 0);
+  margin-top: 5%;
+}
+.mapa{
+   margin-top: 3%;
+}
+.vuelo-principales
+{
+margin-left: 15%;
+margin-right: 15%;
+}
+
+.colordelh1deldestino{
+    color: black;
+    margin-left: 8%;
 }
