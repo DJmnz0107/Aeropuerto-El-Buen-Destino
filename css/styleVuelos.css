@@ -70,6 +70,7 @@ header{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    margin-bottom: 5%;
 }
 
 .menu .logo a{
@@ -214,7 +215,9 @@ margin-right: 15%;
 
 .colordelh1deldestino{
     color: #000000;
-    margin-left: 8%;
+    margin-left: 39%;
+    margin-top: 6%;
+    
 }
 
 #escala:hover{
@@ -231,3 +234,46 @@ margin-right: 15%;
     scale: 1.15;
     transition: 2s;
 }
+
+footer {
+    background-color: #333; 
+    padding: 2rem 0;
+    color: white;
+    margin-top: 5%;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer-info,
+.footer-redes {
+    flex: 1;
+    text-align: center;
+}
+
+.footer-info h3,
+.footer-redes h3 {
+    color: #2ecc71; 
+}
+
+.footer-info p {
+    margin: 0.5rem 0;
+    color: white;
+}
+
+.footer-redes img {
+    width: 30px;
+    margin: 0 0.5rem;
+}
+
+.creditos {
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.creditos p {
+    margin: 0;
+}
+
