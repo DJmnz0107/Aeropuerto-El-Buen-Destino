@@ -80,7 +80,6 @@ header ul li a {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-bottom: 5%;
 }
 
 .menu .logo a{
@@ -98,6 +97,7 @@ header ul li a {
     font-size: 1.5rem;
     cursor: pointer;
     display: none;
+    
 }
 .action_btn{
     background-color: rgb(99, 255, 51);
@@ -130,7 +130,7 @@ header ul li a {
     top: 60px;
     width: 300px;
     height: 0;
-    background: rgba(255, 255, 255, 0.1);
+    background: rgba(68, 56, 56, 0.562);
     backdrop-filter: blur (15px);
     border-radius: 10px;
     overflow: hidden;
@@ -148,6 +148,12 @@ header ul li a {
     align-items: center;
     justify-content: center;
 
+
+}
+
+.menudeslizable li a{
+    text-decoration: none;
+    color: white;
 }
 
 .menudeslizable .action_btn{
@@ -204,6 +210,7 @@ header ul li a {
 .colordelh1delvuelo{
     color: #000000;
     margin-left: 5%;
+    margin-top: 10%;
 }
 
 .tarjeta {
