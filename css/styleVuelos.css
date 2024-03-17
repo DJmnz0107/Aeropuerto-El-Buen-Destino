@@ -60,6 +60,16 @@ a:hover{
 header{
     position: relative;
     padding: 0 2rem;
+    
+}
+
+header ul li a { 
+    text-decoration: none;
+    color: #000000;
+}
+.logo a { 
+    text-decoration: none;
+    color: #000000;
 }
 
 .menu{
@@ -277,3 +287,26 @@ footer {
     margin: 0;
 }
 
+@media (max-width: 992px){
+    .menu .apartados,
+    .menu .action_btn{
+        display: none;
+    }
+
+    .menu .barra{
+        display: block;
+    }
+}
+
+@media (max-width: 576px){
+    .menudeslizable{
+    left: 2rem;
+    width: unset;
+    }
+ }
+
+ @media (max-width: 576px){
+    footer{
+        display: none;
+    }
+ }
