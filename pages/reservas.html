@@ -5,23 +5,37 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="../imgs/airplanes-icon-on-white-background-plane-logo-vector.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" 
+    integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Mis reservas</title>
     <link rel="stylesheet" href="../css/styleReservas.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 </head>
 <body>
-    <div class="menu">
-        <div class="logo"><a href="#"  class="no-link">El buen destino</a></div>
-        <ul class="apartados">
-            <li> <a href="../index.html"  class="no-link">Inicio</a></li>
-            <li> <a href="../pages/vuelos.html"  class="no-link">Vuelos</a></li>
-            <li> <a href="../pages/reservas.html"  class="no-link">Mis reservas</a></li>
-        </ul>
-        <a href="" class="action-btn"  id="recapitular">Recorrido</a>
-        <div class="toggle_btn">
-            <i class="fa-solid fa-bars"></i>
+    <header>
+        <div class="menu">
+            <div class="logo"><a href="#">El buen destino</a></div>
+            <ul class="apartados">
+                <li> <a href="../index.html">Inicio</a></li>
+                <li> <a href="./vuelos.html">Vuelos</a></li>
+                <li> <a href="./reservas.html">Mis reservas</a></li>
+            </ul>
+            <a  download="Recorrido"  href="RECORRIDO DEMOSTRATIVO.pdf" target="_blank" class="action_btn">Recorrido</a>
+    
+            <div class="barra">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+    
         </div>
-    </div>
+    
+        <div class="menudeslizable">
+            <li> <a href="../index.html">Inicio</a></li>
+            <li> <a href="./vuelos.html">Vuelos</a></li>
+            <li> <a href="./reservas.html">Mis reservas</a></li>
+            <li> <a  download="Recorrido"  href="RECORRIDO DEMOSTRATIVO.pdf" target="_blank" class="action_btn">Recorrido</a></li>
+        </div>
+
+    </header> 
 
     <div class="formulario-contenedor">
         <h2>Consulta el estado de tu reserva</h2>
@@ -67,5 +81,6 @@
     </div>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="../js/reservasScript.js"></script>
+    <script src="../js/script.js"></script>
 </body>
 </html>

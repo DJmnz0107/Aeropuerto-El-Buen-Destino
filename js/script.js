@@ -10,3 +10,14 @@ Boton.onclick = function () {
     ? 'fa-solid fa-xmark'
     : 'fa-solid fa-bars'
 }
+
+window.addEventListener('resize', function() {
+    const screenWidth = window.innerWidth;
+    const barraDeslizable = document.querySelector('.menudeslizable');
+    const botonIcono = document.querySelector('.barra i');
+    
+    if (screenWidth > 576) { 
+        barraDeslizable.classList.remove('open');
+        botonIcono.classList = 'fa-solid fa-bars'; 
+    }
+});

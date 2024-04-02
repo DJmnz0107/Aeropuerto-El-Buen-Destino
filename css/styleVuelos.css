@@ -294,6 +294,11 @@ footer {
     margin: 0;
 }
 
+.container4{
+    display: flex;
+    justify-content: space-around;
+}
+
 @media (max-width: 992px){
     .menu .apartados,
     .menu .action_btn{
@@ -313,7 +318,33 @@ footer {
  }
 
  @media (max-width: 576px){
-    footer{
-        display: none;
+    iframe{
+        height: 200px;
+        width: 200px;
     }
+
+    #hola{
+        margin-top: 4%;
+        margin-bottom: 4%;
+    }
+
+    .colordelh1deldestino{
+      margin-left: 17%;
+      
+    }
+    .container4{
+        margin-left: 7%;
+    }
+    .columna{
+        margin-top: 5%;
+        margin-bottom: 5%;
+    }
+
+    .vuelo-principales{
+        width: 440px;
+        margin-left: 3%;
+    }
+ 
+
+
  }
